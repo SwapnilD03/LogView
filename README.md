@@ -24,9 +24,7 @@ By strategically routing logs based on their complexity, the system ensures both
 ---
 
 ## 🏗️ Architecture
-css
-Copy
-Edit
+
             ┌─────────────────┐
             │   Input Logs     │
             └───────┬─────────┘
@@ -49,10 +47,6 @@ Edit
 │ Final Predicted │
 │ Class │
 └────────────────┘
-
-yaml
-Copy
-Edit
 
 ---
 
@@ -81,33 +75,29 @@ Edit
 git clone https://github.com/yourusername/log-classification-hybrid.git
 cd log-classification-hybrid
 2️⃣ Install Dependencies
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 3️⃣ Run the Pipeline
-bash
-Copy
-Edit
+
 python run_pipeline.py --input logs.csv
 📂 Repository Structure
-bash
-Copy
-Edit
-├── data/                  # Sample logs
-├── notebooks/             # Experiment notebooks
-├── models/                # Trained Logistic Regression / Transformer models
-├── pipeline/              # Core classification pipeline
-│   ├── regex_classifier.py
-│   ├── semantic_classifier.py
-│   ├── llm_classifier.py
-│   └── hybrid_pipeline.py
-├── results/               # Metrics, confusion matrix, plots
+
+├── training/                  # Model Training
+├── models/                    # Saved Models
+├── resources/                 # Contains test CSV files,output files,images
+              
+├── processor_regex.py
+│── processor_bert.py
+├── processor_llm.py
+│   
+├── classify             
 ├── requirements.txt
 └── README.md
+
 📖 Future Work
 🔹 Expand to multi-lingual log datasets
 
 🔹 Integrate anomaly detection for unseen log types
 
 🔹 Optimize LLM inference with caching or smaller distilled models
+
