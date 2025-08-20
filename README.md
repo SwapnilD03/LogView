@@ -74,12 +74,11 @@ By strategically routing logs based on their complexity, the system ensures both
 ```bash
 git clone https://github.com/yourusername/log-classification-hybrid.git
 cd log-classification-hybrid
-2️⃣ Install Dependencies
+Install Dependencies
 
 pip install -r requirements.txt
-3️⃣ Run the Pipeline
 
-python run_pipeline.py --input logs.csv
+
 📂 Repository Structure
 
 ├── training/                  # Model Training
@@ -100,4 +99,5 @@ python run_pipeline.py --input logs.csv
 🔹 Integrate anomaly detection for unseen log types
 
 🔹 Optimize LLM inference with caching or smaller distilled models
+
 
