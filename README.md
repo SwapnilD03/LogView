@@ -49,7 +49,7 @@ By strategically routing logs based on their complexity, the system ensures both
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/yourusername/log-classification-hybrid.git
 cd log-classification-hybrid
@@ -78,6 +78,7 @@ pip install -r requirements.txt
 🔹 Integrate anomaly detection for unseen log types
 
 🔹 Optimize LLM inference with caching or smaller distilled models
+
 
 
 
